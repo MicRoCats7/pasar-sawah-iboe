@@ -10,7 +10,7 @@ import { PiArrowDownRightThin } from "react-icons/pi";
 
 function Blog() {
     return (
-        <section className="mt-20 w-full max-w-[1320px] mx-auto">
+        <section className="mt-20 w-full max-w-[1320px] mx-auto" id='article'>
             <div className='flex flex-col items-center justify-center gap-2'>
                 <h3 className='font-inter font-normal text-2xl text-second opacity-55'>Blog</h3>
                 <h2 className='font-playfair font-normal text-4xl text-second'>Silahkan Baca artikel kami</h2>

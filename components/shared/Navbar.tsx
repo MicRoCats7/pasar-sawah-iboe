@@ -13,22 +13,22 @@ function Navbar() {
             />
             <ul className="flex items-center space-x-14">
                 <li>
-                    <a href="/menu" className="hover:text-gray-400">
+                    <a href="#menu" className="hover:text-gray-400">
                         Menu
                     </a>
                 </li>
                 <li>
-                    <a href="/about" className="hover:text-gray-400">
+                    <a href="#about" className="hover:text-gray-400">
                         Tentang Kami
                     </a>
                 </li>
                 <li>
-                    <a href="/article" className="hover:text-gray-400">
+                    <a href="#article" className="hover:text-gray-400">
                         Artikel
                     </a>
                 </li>
                 <li>
-                    <a href="/contact" className="hover:text-gray-400">
+                    <a href="#contact" className="hover:text-gray-400">
                         Contact
                     </a>
                 </li>

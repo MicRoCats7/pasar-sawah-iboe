@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 
 function AboutSection() {
     return (
-        <section className="mt-20 flex flex-col items-center justify-center max-w-[1320px] mx-auto">
+        <section className="mt-20 flex flex-col items-center justify-center max-w-[1320px] mx-auto" id="about">
             <div className='flex flex-col items-center justify-center gap-2'>
                 <h3 className='font-inter font-normal text-2xl text-second opacity-55'>Tentang Kita</h3>
                 <h2 className='font-playfair font-normal text-4xl text-second'>Nikmati Hidangan Lezat di Tengah Alam</h2>
