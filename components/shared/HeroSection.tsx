@@ -27,7 +27,7 @@ function HeroSection() {
     ]
 
     return (
-        <section className='w-full mt-20 flex flex-col items-center justify-center gap-20'>
+        <section className='w-full mt-20 flex flex-col items-center justify-center gap-20 max-w-[1320px] mx-auto'>
             <div className='flex flex-col gap-6 items-center justify-center text-center'>
                 <h1 className='font-medium text-second text-6xl font-playfair'>Pemancingan & <br />
                     W.M Pinggir Sawah Iboe

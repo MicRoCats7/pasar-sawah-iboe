@@ -2,7 +2,7 @@ import { Separator } from '../ui/separator'
 
 function StatsSection() {
     return (
-        <section className='w-full mt-20 flex items-center justify-center gap-20 h-full'>
+        <section className='w-full mt-20 flex items-center justify-center gap-20 h-full max-w-[1320px] mx-auto'>
             <div className='flex flex-col items-center justify-center gap-2'>
                 <h2 className='text-6xl font-normal font-inter text-second'>30+</h2>
                 <p className='font-playfair text-2xl font-normal text-second'>Tempat Pemancingan</p>

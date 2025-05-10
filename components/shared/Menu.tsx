@@ -1,3 +1,5 @@
+"use client"
+
 import {
     Tabs,
     TabsContent,
@@ -8,7 +10,7 @@ import CardMenu from "./CardMenu"
 
 function Menu() {
     return (
-        <section className='flex flex-col items-center justify-center mt-20'>
+        <section className='flex flex-col items-center justify-center mt-20 max-w-[1320px] mx-auto'>
             <div className='flex flex-col items-center justify-center gap-2'>
                 <h3 className='font-inter font-normal text-2xl text-second opacity-55'>Menu Kami</h3>
                 <h2 className='font-playfair font-normal text-4xl text-second'>Lorem Ipsum</h2>

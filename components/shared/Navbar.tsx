@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Navbar() {
     return (
-        <nav className="flex items-center justify-between py-6 text-second">
+        <nav className="flex items-center justify-between py-6 text-second max-w-[1320px] mx-auto">
             <Image
                 src="/assets/Logo.svg"
                 alt="Logo Pinggir Sawah"
