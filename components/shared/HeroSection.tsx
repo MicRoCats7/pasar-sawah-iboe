@@ -27,17 +27,23 @@ function HeroSection() {
     ]
 
     return (
-        <section className='w-full mt-20 flex flex-col items-center justify-center gap-20 max-w-[1320px] mx-auto'>
+        <section className='w-full pt-40 flex flex-col items-center justify-center gap-20 max-w-[1320px] mx-auto'>
             <div className='flex flex-col gap-6 items-center justify-center text-center'>
-                <h1 className='font-medium text-second text-6xl font-playfair'>Pemancingan & <br />
-                    W.M Pinggir Sawah Iboe
-                </h1>
+                <Image
+                    src='/assets/judul.svg'
+                    alt='judul'
+                    width={701}
+                    height={154}
+                    draggable={false}
+                    loading='lazy'
+                />
                 <p className='font-inter text-second text-xl font-normal'>
                     Makan enak, mancing santai, semua di satu tempat.
                 </p>
                 <Button
                     variant='main'
                     size='custom'
+                    onClick={() => window.scrollTo({ top: document.getElementById('menu')?.offsetTop, behavior: 'smooth' })}
                 >
                     MENU KITA
                     <PiArrowDownRightThin size={34} />
