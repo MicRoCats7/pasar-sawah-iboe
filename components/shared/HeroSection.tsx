@@ -5,25 +5,29 @@ import Image from 'next/image';
 function HeroSection() {
     const images = [
         {
-            src: '/assets/images-hero/Rectangle 1464.png',
+            src: '/assets/images-hero/image1.svg',
             alt: 'Hero Image 1',
         },
         {
-            src: '/assets/images-hero/Rectangle 1463.png',
+            src: '/assets/images-hero/image2.svg',
             alt: 'Hero Image 2',
         },
         {
-            src: '/assets/images-hero/Rectangle 1462.png',
+            src: '/assets/images-hero/image3.svg',
             alt: 'Hero Image 3',
         },
         {
-            src: '/assets/images-hero/Rectangle 1465.png',
+            src: '/assets/images-hero/image4.svg',
             alt: 'Hero Image 4',
         },
         {
-            src: '/assets/images-hero/Rectangle 1466.png',
+            src: '/assets/images-hero/image5.svg',
             alt: 'Hero Image 5',
         },
+        {
+            src: '/assets/images-hero/image6.svg',
+            alt: 'Hero Image 6',
+        }
     ]
 
     return (

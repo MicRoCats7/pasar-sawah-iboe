@@ -7,13 +7,31 @@ import {
     TabsTrigger,
 } from "@/components/ui/tabs"
 import CardMenu from "./CardMenu"
+import { useState, useEffect } from "react";
+import { getMenu } from "@/services/api";
 
 function Menu() {
+    const [menu, setMenu] = useState<any>([]);
+
+    const getItemsMenu = async () => {
+        await getMenu(3)
+            .then((res: any) => {
+                setMenu(res.data);
+            })
+            .catch((err) => {
+                console.error("Error fetching menu:", err);
+            })
+    };
+
+    useEffect(() => {
+        // getItemsMenu();
+    }, []);
+
     return (
         <section className='flex flex-col items-center justify-center pt-32 max-w-[1320px] mx-auto' id="menu">
             <div className='flex flex-col items-center justify-center gap-2'>
-                <h3 className='font-inter font-normal text-2xl text-second opacity-55'>Menu Kami</h3>
-                <h2 className='font-playfair font-normal text-4xl text-second'>Lorem Ipsum</h2>
+                <h3 className='font-inter font-normal text-2xl text-second opacity-55'>Dari Dapur Kami untuk Anda</h3>
+                <h2 className='font-playfair font-normal text-4xl text-second'>MENU KAMI</h2>
             </div>
             <Tabs defaultValue="minuman" className="w-full flex items-center justify-center mt-20">
                 <TabsList className="w-full max-w-[556px]">
