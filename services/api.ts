@@ -12,3 +12,16 @@ export const getMenu = (category: number) => {
             });
     });
 };
+
+export const getCategory = () => {
+    return new Promise((resolve, reject) => {
+        axios
+            .get(`https://warung.houselab.my.id/api/menu/categories`)
+            .then((res) => {
+                resolve(res);
+            })
+            .catch((err) => {
+                reject(err);
+            });
+    });
+};
