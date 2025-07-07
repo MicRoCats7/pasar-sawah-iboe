@@ -20,7 +20,7 @@ function DetailArtikel() {
                     <MoveLeft
                         color='#6D1600'
                         size={40}
-                        onClick={() => router.back()}
+                        onClick={() => router.push("/")}
                     />
                     <div className='flex flex-col items-center justify-center gap-2'>
                         <h1 className='text-second font-normal font-playfair text-4xl'>Nikmati Hidangan Lezat di Tengah Alam</h1>
@@ -51,7 +51,7 @@ function DetailArtikel() {
                     variant='main'
                     size='custom'
                     className="w-1/3 text-2xl font-playfair-sc mt-36 mb-16"
-                    onClick={() => router.back()}
+                    onClick={() => router.push("/")}
                 >
                     Kembali ke beranda
                     <BsArrowLeft size={34} />

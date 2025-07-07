@@ -73,14 +73,16 @@ function AboutSection() {
                         draggable={false}
                         loading='lazy'
                     />
-                    <Button
-                        variant='main'
-                        size='custom'
-                        className="w-full text-xl"
-                    >
-                        CONTACT KAMI
-                        <PiArrowDownRightThin size={34} />
-                    </Button>
+                    <a href="#contact">
+                        <Button
+                            variant='main'
+                            size='custom'
+                            className="w-full text-xl"
+                        >
+                            CONTACT KAMI
+                            <PiArrowDownRightThin size={34} />
+                        </Button>
+                    </a>
                 </div>
             </div>
         </section>

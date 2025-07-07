@@ -1,17 +1,8 @@
-import Image from 'next/image'
-
 function Navbar() {
     return (
         <div className='fixed top-0 left-0 right-0 z-50 bg-white'>
             <nav className="flex items-center justify-between py-6 text-second max-w-[1320px] mx-auto">
-                <Image
-                    src="/assets/Logo.svg"
-                    alt="Logo Pinggir Sawah"
-                    width={40}
-                    height={40}
-                    draggable={false}
-                    loading="lazy"
-                />
+                <h1 className='font-playfair text-main text-3xl font-semibold'>W.M Pasar iboe</h1>
                 <ul className="flex items-center space-x-14">
                     <li>
                         <a href="#menu" className="hover:text-gray-400">
@@ -34,7 +25,7 @@ function Navbar() {
                         </a>
                     </li>
                 </ul>
-                <div />
+                <div className="w-1/6"/>
             </nav>
         </div>
     )

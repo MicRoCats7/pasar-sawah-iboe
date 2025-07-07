@@ -11,7 +11,7 @@ L.Icon.Default.mergeOptions({
     shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
 });
 
-const position: [number, number] = [37.7749, -122.4194];
+const position: [number, number] = [-7.1227613, 110.7742596];
 
 export default function ClientLeafletMap() {
     return (
@@ -23,11 +23,10 @@ export default function ClientLeafletMap() {
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
             <Marker position={position}>
                 <Popup>
-                    San Francisco, CA<br />Kunjungi kami!
+                    Pemancingan dan <br /> W.M Pinggir Sawah Iboe
                 </Popup>
             </Marker>
         </MapContainer>
