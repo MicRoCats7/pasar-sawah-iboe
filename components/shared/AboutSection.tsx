@@ -11,9 +11,8 @@ function AboutSection() {
             <div className="w-full flex flex-row items-center justify-center gap-20 mt-20">
                 <div>
                     <div className="flex flex-col gap-6 max-w-full">
-                        <p className="font-inter text-lg font-normal text-second">Rasakan pengalaman bersantap yang berbeda di W.M. Pinggir Sawah Iboe, tempat di mana cita rasa khas rumahan berpadu dengan suasana tenang sawah dan kolam pemancingan. Kami hadir untuk menghadirkan momen santai bersama keluarga, teman, maupun rekan kerja.</p>
-                        <p className="font-inter text-lg font-normal text-second">Di sini, Anda bisa menikmati hidangan segar hasil olahan sendiri sambil memancing langsung di kolam kami. Setiap sudut tempat ini dirancang untuk menghadirkan kenyamanan dan keasrian khas pedesaan.</p>
-                        <p className="font-inter text-lg font-normal text-second">Dengan bahan baku yang segar dan pelayanan yang ramah, kami berkomitmen memberikan pengalaman makan terbaik untuk Anda yang rindu suasana desa.</p>
+                        <p className="font-inter text-lg font-normal text-second">Nikmati pengalaman bersantap yang unik di W.M. Pinggir Sawah Iboe, tempat cita rasa rumahan berpadu dengan suasana alami di tengah sawah dan kolam pemancingan. Kami hadir untuk menciptakan momen santai bersama keluarga, teman, atau rekan kerja dengan suasana yang tenang dan nyaman.</p>
+                        <p className="font-inter text-lg font-normal text-second">Untuk kenyamanan Anda, berikut ini kami lampirkan rincian biaya ongkir agar pemesanan Anda lebih jelas dan transparan:</p>
                     </div>
                     <table className="mt-10 w-full border-collapse">
                         <thead>
