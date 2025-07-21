@@ -18,7 +18,7 @@ function Navbar() {
     return (
         <div className='fixed top-0 left-0 right-0 z-50 bg-white'>
             <nav className="flex items-center justify-between py-6 text-second max-w-[1320px] md:mx-auto mx-4">
-                <h1 className='font-playfair text-main text-3xl font-semibold'>W.M Pasar iboe</h1>
+                <h1 className='font-playfair text-main text-3xl font-semibold'>W.M Pinggir Sawah iboe</h1>
                 <div className="md:hidden">
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger>
