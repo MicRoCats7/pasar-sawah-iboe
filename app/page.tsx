@@ -22,7 +22,7 @@ export default function Home() {
       <Blog />
       <Footer />
       <div
-        className="fixed bottom-5 right-5 bg-main w-[72px] p-4 rounded-bl-[32px] rounded-tr-[32px] cursor-pointer"
+        className="fixed bottom-5 right-5 z-50 bg-main w-[72px] p-4 rounded-bl-[32px] rounded-tr-[32px] cursor-pointer"
         onClick={() =>
           window.open(
             "https://api.whatsapp.com/send?phone=6285946953206&text=" + encodeURIComponent("Halo, saya mau pesan"),

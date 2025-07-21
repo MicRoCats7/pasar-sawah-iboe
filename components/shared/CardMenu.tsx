@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import * as React from "react"
 import { IoIosStar } from "react-icons/io";
 
@@ -10,6 +13,18 @@ import "swiper/css/pagination";
 import { CardMenuProps } from "@/types";
 
 function CardMenu({ menuItems }: CardMenuProps) {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const formatPrice = (price: number) => {
         return new Intl.NumberFormat('id-ID', {
             style: 'currency',
@@ -21,16 +36,10 @@ function CardMenu({ menuItems }: CardMenuProps) {
 
     return (
         <Swiper
-            className="w-full max-w-[1320px] mx-auto mt-10"
+            className="w-full max-w-[1320px] md:mx-auto mx-4 mt-10"
             modules={[Pagination]}
             spaceBetween={20}
-            slidesPerView={4}
-            breakpoints={{
-                640: { slidesPerView: 1.5 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 4 },
-            }}
+            slidesPerView={isMobile ? 2 : 4}
             pagination={{ clickable: true }}
             style={{
                 "--swiper-pagination-color": "#6D1600",
@@ -46,9 +55,9 @@ function CardMenu({ menuItems }: CardMenuProps) {
                                 <Image
                                     src={item?.image}
                                     alt={item?.name}
-                                    width={302}
-                                    height={240}
-                                    className="rounded-bl-[40px] rounded-tr-[40px] w-full object-cover h-[240px]"
+                                    width={isMobile ? 159 : 302}
+                                    height={isMobile ? 147 : 240}
+                                    className="rounded-bl-[40px] rounded-tr-[40px] w-full object-cover md:h-[240px] h-[147px]"
                                     draggable="false"
                                     loading="lazy"
                                     onError={(e) => {
@@ -56,22 +65,22 @@ function CardMenu({ menuItems }: CardMenuProps) {
                                     }}
                                 />
                                 <div className="flex flex-col items-start justify-start mt-4 gap-4 px-6 pb-6 w-full">
-                                    <h4 className="font-plus-jakarta-sans font-semibold text-xl text-second">
+                                    <h4 className="font-plus-jakarta-sans font-semibold md:text-xl text-sm text-second">
                                         {item.name}
                                     </h4>
                                     <div className="flex items-center gap-2 w-full">
                                         <div className="flex items-center justify-start gap-1">
-                                            <IoIosStar size={24} color="#FFB31F" />
-                                            <span className="font-inter font-bold text-xl text-second opacity-70">{item.rate || "4.9"}</span>
+                                            <IoIosStar size={isMobile ? 16 : 24} color="#FFB31F" />
+                                            <span className="font-inter font-bold md:text-xl text-sm text-second opacity-70">{item.rate || "4.9"}</span>
                                         </div>
-                                        <p className="font-inter font-normal text-base text-second opacity-70">{item.total_review || "(180 reviews)"}</p>
+                                        <p className="font-inter font-normal md:text-base text-xs text-second opacity-70">{item.total_review || "(180 reviews)"}</p>
                                     </div>
                                     {item.description && (
-                                        <p className="font-inter font-normal text-base text-second opacity-70">
+                                        <p className="font-inter font-normal  md:text-base text-sm text-second opacity-70">
                                             {item.description}
                                         </p>
                                     )}
-                                    <span className="font-inter font-bold text-xl text-second opacity-70">
+                                    <span className="font-inter font-bold md:text-xl text-sm text-second opacity-70">
                                         {formatPrice(item.price)}
                                     </span>
                                     {!item.is_available && (
@@ -87,7 +96,7 @@ function CardMenu({ menuItems }: CardMenuProps) {
             ) : (
                 <SwiperSlide>
                     <div className="w-full flex items-center justify-center h-[400px]">
-                        <p className="font-inter font-normal text-lg text-second opacity-70">
+                        <p className="font-inter font-normal md:text-lg text-sm text-second opacity-70">
                             Belum ada menu untuk kategori ini
                         </p>
                     </div>

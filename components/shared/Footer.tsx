@@ -4,9 +4,9 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaWhatsapp, FaYoutube } 
 function Footer() {
     return (
         <section className='bg-second' id='contact'>
-            <div className='max-w-[1320px] mx-auto py-20'>
-                <div className='flex items-start gap-20'>
-                    <div className='flex flex-col items-start gap-8 w-[38%]'>
+            <div className='max-w-[1320px] md:mx-auto mx-4 py-20'>
+                <div className='flex md:flex-row flex-col items-start gap-20'>
+                    <div className='flex flex-col items-start gap-8 md:w-[38%] w-full'>
                         <div className='flex items-center gap-6'>
                             <h3 className='font-inter font-semibold text-5xl text-white'>W.M Pasar iboe</h3>
                         </div>

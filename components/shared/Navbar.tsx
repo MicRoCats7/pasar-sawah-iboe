@@ -24,7 +24,7 @@ function Navbar() {
                         <SheetTrigger>
                             <GiHamburgerMenu size={24} />
                         </SheetTrigger>
-                        <SheetContent className="w-full flex items-end">
+                        <SheetContent className="flex items-end">
                             <ul className="space-y-4 mt-[70px] text-end pr-4">
                                 <li>
                                     <a
